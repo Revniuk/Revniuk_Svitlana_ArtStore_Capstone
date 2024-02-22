@@ -4,7 +4,7 @@
   "description": "A full-stack web application for an art store",
   "main": "server/app.js",
   "scripts": {
-    "start": "node server/app.js",
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
     "client": "cd client && npm start",
     "dev": "concurrently \"npm run start\" \"npm run client\""
   },
@@ -22,3 +22,4 @@
   "author": "Svitlana Revniuk",
   "license": "ISC"
 }
+
