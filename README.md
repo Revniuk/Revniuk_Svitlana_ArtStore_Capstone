@@ -27,7 +27,8 @@ art-store/
 
   Notes
   !!! INSTALL 
-  npm install axios 
+  npm install react react-dom react-router-dom axios
+      install axios 
       install bcryptjs jsonwebtoken
   in the terminal.
       
