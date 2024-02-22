@@ -26,7 +26,11 @@ art-store/
   package.json    # Project dependencies (both client and server)
 
   Notes
-  !!! Install the axios library by running npm install axios in the terminal.
+  !!! INSTALL 
+  npm install axios 
+      install bcryptjs jsonwebtoken
+  in the terminal.
+      
       The API used is https://www.artpi.co/how-it-works
       
 This code creates a simple RESTful API for managing artworks. It includes endpoints for getting all artworks (GET /artworks), creating a new artwork (POST /artworks), getting a specific artwork by ID (GET /artworks/:id), updating an artwork by ID (PUT /artworks/:id), and deleting an artwork by ID (DELETE /artworks/:id).
