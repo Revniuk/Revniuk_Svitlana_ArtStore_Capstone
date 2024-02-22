@@ -12,6 +12,9 @@ const artworkSchema = new Schema({
   timestamps: true,
 });
 
+// Add an index on the 'title' field, 
+artworkSchema.index({ title: 1 });
+
 const Artwork = mongoose.model('Artwork', artworkSchema);
 
 module.exports = Artwork;

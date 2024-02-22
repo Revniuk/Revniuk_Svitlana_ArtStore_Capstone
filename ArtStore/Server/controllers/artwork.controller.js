@@ -1,14 +1,17 @@
 const Artwork = require('../models/artwork.model');
 
 // Get all artworks
-const getArtworks = async (req, res) => {
+const addArtwork = async (req, res) => {
+  const artwork = new Artwork(req.body); // req.body includes price
+
   try {
-    const artworks = await Artwork.find();
-    res.json(artworks);
+    const newArtwork = await artwork.save();
+    res.status(201).json(newArtwork);
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(400).json({ message: err.message });
   }
 };
+
 
 // Add a new artwork
 const addArtwork = async (req, res) => {
