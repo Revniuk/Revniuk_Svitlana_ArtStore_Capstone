@@ -1,3 +1,4 @@
+const artworkRouter = require('./routes/artwork');
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -21,8 +22,8 @@ connection.once('open', () => {
 })
 
 // Define routes
-const exampleRouter = require('./routes/example');
-app.use('/example', exampleRouter);
+const artworkRouter = require('./routes/artwork');
+app.use('/artwork', artworkRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
