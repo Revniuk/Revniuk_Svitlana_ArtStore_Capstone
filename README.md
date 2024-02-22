@@ -26,6 +26,9 @@ art-store/
   package.json    # Project dependencies (both client and server)
 
   Notes
+  !!! Install the axios library by running npm install axios in the terminal.
+      The API used is https://www.artpi.co/how-it-works
+
 
 client: Contains React frontend.
 
