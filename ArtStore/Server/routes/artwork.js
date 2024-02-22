@@ -1,21 +1,11 @@
 const router = require('express').Router();
-let Artwork = require('../models/artwork.model');
+const { getArtworks, addArtwork } = require('../controllers/artwork.controller');
 
 // Endpoint to get all artworks
-router.route('/').get((req, res) => {
-  Artwork.find()
-    .then(artworks => res.json(artworks))
-    .catch(err => res.status(400).json('Error: ' + err));
-});
+router.route('/').get(getArtworks);
 
 // Endpoint to add a new artwork
-router.route('/add').post((req, res) => {
-  const newArtwork = new Artwork(req.body);
-
-  newArtwork.save()
-    .then(() => res.json('Artwork added!'))
-    .catch(err => res.status(400).json('Error: ' + err));
-});
+router.route('/add').post(addArtwork);
 
 // More routes can be added here for updating and deleting artworks
 
