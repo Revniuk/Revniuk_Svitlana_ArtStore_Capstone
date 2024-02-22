@@ -10,29 +10,28 @@ Notes
       concurrently
   
       
-      The API used is https://www.artpi.co/how-it-works
-art-store/
-  client/         # React frontend
-    src/
-      components/    # Reusable UI components (artwork display, forms, etc.)
-      pages/         # Main views (homepage, gallery, artist profile, etc.)
-      utils/         # Helper functions
-      api/           # API calls to the backend
-      styles/        # CSS or styling setup
-      App.js         # Root component
-      index.js       # React app entry point   
-    public/
-      index.html     # Base HTML template
-  server/         # Node/Express backend
-    config/        # Configurations (database connection, etc.)
-    models/        # Data models (artwork, artist, order)
-    routes/        # API routes
-    controllers/   # Logic to handle requests 
-    middleware/    # Authentication, error handling, etc.
-    app.js         # Server entry point 
-  .gitignore      
-  README.md       # Project description
-  package.json    # Project dependencies (both client and server)
+The API used is https://www.artpi.co/how-it-works
+
+art-store/  
+|-- /client
+|   |-- /src
+|   |   |-- App.js
+|   |   |-- index.js
+|   |   |-- HomePage.js
+|   |   |-- LoginPage.js
+|   |   |-- RegisterPage.js
+|   |-- package.json
+|-- /server
+|   |-- /models
+|   |   |-- user.model.js
+|   |-- /controllers
+|   |   |-- users.controller.js
+|   |-- app.js
+|   |-- package.json
+|-- package.json
+.gitignore      
+README.md       # Project description
+package.json    # Project dependencies (both client and server)
 
   
       
