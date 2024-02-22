@@ -2,6 +2,15 @@
 CP 325.9: Capstone. Per Scholas Bootcamp projects
 Project Structure
 
+Notes
+  !!! INSTALL 
+  npm install react react-dom react-router-dom axios
+      install axios 
+      install bcryptjs jsonwebtoken
+      concurrently
+  
+      
+      The API used is https://www.artpi.co/how-it-works
 art-store/
   client/         # React frontend
     src/
@@ -25,14 +34,7 @@ art-store/
   README.md       # Project description
   package.json    # Project dependencies (both client and server)
 
-  Notes
-  !!! INSTALL 
-  npm install react react-dom react-router-dom axios
-      install axios 
-      install bcryptjs jsonwebtoken
-  in the terminal.
-      
-      The API used is https://www.artpi.co/how-it-works
+  
       
 This code creates a simple RESTful API for managing artworks. It includes endpoints for getting all artworks (GET /artworks), creating a new artwork (POST /artworks), getting a specific artwork by ID (GET /artworks/:id), updating an artwork by ID (PUT /artworks/:id), and deleting an artwork by ID (DELETE /artworks/:id).
 
