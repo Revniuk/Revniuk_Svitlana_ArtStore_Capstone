@@ -7,7 +7,7 @@ const GalleryPage = () => {
     { title: 'Ocean Breeze', artist: 'Alice Wonderland' },
     { title: 'Mountain Majesty', artist: 'Bob Builder' },
     { title: 'City Lights', artist: 'Charlie Chocolate' },
-    // Add more artworks as I have it 
+    
   ];
 
   return (

@@ -13,8 +13,8 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <h1>Welcome to our Art Store!</h1>
-      <h2>Featured Artworks</h2>
+      <h1>Welcome to Svitlana's Art Store!</h1>
+      <h2>Artworks by local artists for Sale</h2>
       {artworks.map((artwork, index) => (
         <div key={index}>
           <h3>{artwork.title}</h3>
